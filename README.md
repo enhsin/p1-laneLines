@@ -20,14 +20,10 @@ I use the same parameters of Canny and Hough Transform that were used in the qui
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+The pipeline doesn’t work well on the challenge video. It has shadows and the color of the road is not uniform (new/faded Asphalt paving). The left lane is sometimes very faint .The region of interest need to be adjusted because the bottom the view is blocked (not sure what it is) and the road more curved.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+I use two trapezoids to cover left and right lanes to reduce the unwanted edge detection in the middle of the road caused by shadows and road color changes.  I lower the threshold in Canny to detect faint yellow left lane.  Spurious horizontal stripes are not included in the regression (the slope needs to be >0.5 or <-0.5). The resulting video is [challenge.mp4](./test_images_output/challenge.mp4).
+The detection is not perfect.  The lane direction sometimes changes a little bit. It’s tricky to detect lane marks when the surrounding has similar line features.
 
-Another potential improvement could be to ...
