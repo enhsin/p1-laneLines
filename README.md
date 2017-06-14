@@ -24,6 +24,6 @@ The pipeline doesn’t work well on the challenge video. It has shadows and the 
 
 ### 3. Suggest possible improvements to your pipeline
 
-I use two trapezoids to cover left and right lanes to reduce the unwanted edge detection in the middle of the road caused by shadows and road color changes.  I lower the threshold in Canny to detect faint yellow left lane.  Spurious horizontal stripes are not included in the regression (the slope needs to be >0.5 or <-0.5). The resulting video is [challenge.mp4](./test_images_output/challenge.mp4).
+I use two trapezoids to cover left and right lanes to reduce the unwanted edge detection in the middle of the road caused by shadows and road color changes.  I lower the threshold in Canny to detect faint yellow left lane.  Spurious horizontal stripes are not included in the regression (the slope needs to be >0.5 or <-0.5). The resulting video is [challenge.mp4](./test_videos_output/challenge.mp4).
 The detection is not perfect.  The lane direction sometimes changes a little bit. It’s tricky to detect lane marks when the surrounding has similar line features.
 
