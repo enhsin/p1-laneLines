@@ -20,7 +20,7 @@ I use the same parameters of Canny and Hough Transform that were used in the qui
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-The pipeline doesn’t work well on the challenge video. It has shadows and the color of the road is not uniform (new/faded Asphalt paving). The left lane is sometimes very faint .The region of interest need to be adjusted because the bottom the view is blocked (not sure what it is) and the road more curved.
+The pipeline doesn’t work well on the challenge video. It has shadows and the color of the road is not uniform (new/faded Asphalt paving). The left lane is sometimes very faint .The region of interest need to be adjusted because the bottom the view is blocked (not sure what it is) and the road is more curved.
 
 ### 3. Suggest possible improvements to your pipeline
 
